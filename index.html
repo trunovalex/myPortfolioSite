@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+   <html lang="ru">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="Truenow - Front-end Developer">
+      <meta name="keywords" content="веб-дизайн, верстка, фронтент разработка, маркетинг, реклама, web-design, frontend developer, marketing, ads">
+      <meta name="author" content="Alex Trunov">
+      <meta name="robots" content="index, follow">
+
+      <!--=============== FAVICON ===============-->
+      <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+      <!--=============== REMIXICONS ===============-->
+      <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
+
+      <!--=============== CSS ===============-->
+      <link rel="stylesheet" href="assets/css/styles.css">
+
+      <title>Truenow Developer</title>
+   </head>
+   <body>
+      <!--==================== HEADER ====================-->
+      <header class="header" id="header">
+         <nav class="nav container">
+            <a href="#" class="nav__logo">
+               Alex <span>Trunov</span>
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+               <ul class="nav__list">
+                  <li class="nav__item">
+                     <a href="#home" class="nav__link active-link" data-en="Home" data-ru="Главная"></a>
+                   </li>
+                   <li class="nav__item">
+                     <a href="#about" class="nav__link" data-en="About" data-ru="О себе"></a>
+                   </li>
+                   <li class="nav__item">
+                     <a href="#services" class="nav__link" data-en="Services" data-ru="Услуги"></a>
+                   </li>
+                   <li class="nav__item">
+                     <a href="#projects" class="nav__link" data-en="Projects" data-ru="Проекты"></a>
+                   </li>
+                   <li class="nav__item">
+                     <a href="#contact" class="nav__link" data-en="Contact" data-ru="Контакты"></a>
+                   </li>
+
+                      <label class="switch">
+                        <input type="checkbox" id="languageToggle" onchange="toggleLanguage()" checked>
+                        <span class="slider round"></span>
+                        <span class="label">en</span>
+                      </label>
+
+                  </li>
+               </ul>
+
+               <!-- Close button -->
+               <div class="nav__close" id="nav-close">
+                  <i class="ri-close-line"></i>
+               </div>
+            </div>
+
+            <!-- Toggle button -->
+            <div class="nav__toggle" id="nav-toggle">
+               <i class="ri-menu-2-line"></i>
+            </div>
+         </nav>
+      </header>
+
+      <!--==================== MAIN ====================-->
+      <main class="main">
+         <!--==================== HOME ====================-->
+         <section class="home section" id="home">
+            <div class="home__container container grid">
+               <div class="home__content">
+                  <div class="home__data">
+                     <!-- <h3 class="home__subtitle">
+                        Hello, <span>I'm</span>
+                     </h3> -->
+                     <h3 class="home__subtitle" data-en="Hello, I'm" data-ru="Привет, я"></h3>
+                      
+                     <h1 class="home__title" data-en="Alex Trunov" data-ru="Алекс Трунов"></h1>
+
+                     <h3 class="home__education" data-en="Front-end Developer" data-ru="Front-end Разработчик"></h3>
+
+                     <p class="home__description" data-en="With knowledge in web development and design, I offer the best projects resulting in quality work." data-ru="Логическое мышление и творческий склад ума позволяют мне качественно выполнять свою работу.">
+                     </p>
+
+                     <a href="#contact" class="button" data-en="Let's Talk" data-ru="Напишите мне"></a>
+                  </div>
+
+                  <div class="home__social">
+                     <a href="https://github.com/trunovalex" target="_blank" class="home__social-link">
+                        <i class="ri-github-fill"></i>
+                     </a>
+                     <a href="https://www.linkedin.com/in/truenow" target="_blank" class="home__social-link">
+                        <i class="ri-linkedin-box-line"></i>
+                     </a>
+                     <a href="https://www.instagram.com/trunov_alexey/" target="_blank" class="home__social-link">
+                        <i class="ri-instagram-line"></i>
+                     </a>
+                  </div>
+               </div>
+
+               <div class="home__image">
+                  <svg class="home__blob" viewBox="0 0 550 591" xmlns="http://www.w3.org/2000/svg">
+                     <mask id="maskBlob" mask-type="alpha">
+                        <path d="M263 47.1782C270.426 42.891 279.574 42.891 287 47.1782L501.157 
+                        170.822C508.583 175.109 513.157 183.032 513.157 191.606V438.894C513.157 
+                        447.468 508.583 455.391 501.157 459.678L287 583.322C279.574 587.609 270.426 
+                        587.609 263 583.322L48.843 459.678C41.4174 455.391 36.843 447.468 36.843 
+                        438.894V191.606C36.843 183.032 41.4174 175.109 48.843 170.822L263 47.1782Z"/>
+                     </mask>
+                     <g mask="url(#maskBlob)">
+                        <path d="M263 47.1782C270.426 42.891 279.574 42.891 287 47.1782L501.157 
+                        170.822C508.583 175.109 513.157 183.032 513.157 191.606V438.894C513.157 
+                        447.468 508.583 455.391 501.157 459.678L287 583.322C279.574 587.609 270.426 
+                        587.609 263 583.322L48.843 459.678C41.4174 455.391 36.843 447.468 36.843 
+                        438.894V191.606C36.843 183.032 41.4174 175.109 48.843 170.822L263 47.1782Z"/>
+                  
+                        <rect x="37" width="476" height="630" fill="url(#pattern0)"/>
+                     </g>
+                  
+                     <rect x="37" width="476" height="300" fill="url(#pattern1)"/>
+                  
+                     <defs>
+                        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                           <use href="#imageBlob" transform="matrix(0.00143057 0 0 0.00108108 0.0404062 0)"/>
+                        </pattern>
+                  
+                        <pattern id="pattern1" patternContentUnits="objectBoundingBox" width="1" height="1">
+                           <use href="#imageBlob" transform="matrix(0.00143057 0 0 0.00226984 0.0404062 0)"/>
+                        </pattern>
+                  
+                        <!-- Insert your profile (recommended size: 640 x 940) -->
+                        <image class="home__img" id="imageBlob" width="750" height="1050" href="/assets/img/1-1.png"/>
+                     </defs>
+                  </svg>
+               </div>
+            </div>
+         </section>
+
+         <!--==================== ABOUT ====================-->
+         <section class="about section" id="about">
+            <div class="about__container container grid">
+               <div class="about__data">
+                  <h3 class="section__subtitle data__color" data-en="My Intro" data-ru="Коротко"></h3>
+
+                  <h2 class="section__title" data-en="About Me" data-ru="О себе"></h2>
+
+                  <p class="about__description" data-en="Frontend developer, creating web pages with user interface UI/UX, experience since 2021. I work responsibly and do not allow compromises." data-ru="Frontend-разработчик, создаю веб-страницы с пользовательским UI/UX интерфейсом, опыт с 2021 года. Работаю ответственно и не допускаю компромиссов.">
+                  </p>
+
+                  <a href="#about" id="openButton" class="button" data-en="See Certificate" data-ru="Сертификаты"></a>
+               </div>
+
+               <div class="about__image">
+                  <svg class="about__blob" viewBox="0 0 550 592" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <mask id="maskBorder" mask-type="alpha">
+                        <path d="M263 48.1782C270.426 43.891 279.574 43.891 287 48.1782L501.157 
+                        171.822C508.583 176.109 513.157 184.032 513.157 192.606V439.894C513.157 
+                        448.468 508.583 456.391 501.157 460.678L287 584.322C279.574 588.609 
+                        270.426 588.609 263 584.322L48.843 460.678C41.4174 456.391 36.843 448.468 36.843 
+                        439.894V192.606C36.843 184.032 41.4174 176.109 48.843 171.822L263 48.1782Z" fill="black"/>
+                     </mask>
+                     <g mask="url(#maskBorder)">
+                        <rect x="37" width="476" height="630" fill="url(#pattern2)"/>
+                        
+                        <path d="M285 51.6423L499.157 175.286C505.345 178.859 509.157 185.461 509.157 
+                        192.606V439.894C509.157 447.039 505.345 453.641 499.157 457.214L285 
+                        580.858C278.812 584.43 271.188 584.43 265 580.858L50.843 457.214C44.655 453.641 
+                        40.843 447.039 40.843 439.894V192.606C40.843 185.461 44.655 178.859 50.843 
+                        175.286L265 51.6423C271.188 48.0697 278.812 48.0696 285 51.6423Z" stroke="black" stroke-width="10"/>
+                     </g>
+                  
+                     <rect x="37" width="476" height="300" fill="url(#pattern3)"/>
+                  
+                     <defs>
+                        <pattern id="pattern2" patternContentUnits="objectBoundingBox" width="1" height="1">
+                           <use href="#imageBorder" transform="matrix(0.00143057 0 0 0.00108108 0.0404062 0)"/>
+                        </pattern>
+                  
+                        <pattern id="pattern3" patternContentUnits="objectBoundingBox" width="1" height="1">
+                           <use href="#imageBorder" transform="matrix(0.00143057 0 0 0.00226984 0.0404062 0)"/>
+                        </pattern>
+                  
+                        <!-- Insert your profile (recommended size: 640 x 940) -->
+                        <image class="about__img" id="imageBorder" width="750" height="1050" href="/assets/img/1-2.png"/>
+                     </defs>
+                  </svg>
+               </div>
+            </div>
+
+            <!-- Modal Window Certificate -->
+            <div id="about__background"></div>
+            <div id="about__modal">
+               <div class="modal__header">
+                  <h2 data-en="Certificates" data-ru="Сертификаты"></h2>
+                  <a href="#about" class="modal__link" id="closeButton">
+                   <i class="ri-close-line modal__icon"></i>
+                   </a>
+               </div>
+
+               <div class="modal__content">
+
+                  <a href="/assets/certificates/Frontend разработчик на HTML, CSS и JavaScript.pdf" target="_blank" class="modal__item">
+                     <img class="modal__img" src="/assets/img/certificates/Frontend разработчик на HTML, CSS и JavaScript.jpg" alt="">
+                     <p class="modal__p" data-en="Frontend developer in HTML, CSS and JavaScript" data-ru="Frontend разработчик на HTML, CSS и JavaScript"></p>
+                  </a>
+                  
+                  <a href="/assets/certificates/jQuery для начинающих.pdf" target="_blank" class="modal__item">
+                     <img class="modal__img" src="/assets/img/certificates/jQuery для начинающих.jpg" alt="">
+                     <p class="modal__p" data-en="jQuery course" data-ru="Курс по jQuery"></p>
+                  </a>
+                  
+                  <a href="/assets/certificates/Веб дизайн в Figma с нуля до результата! Основы UX UI Web Design.pdf" target="_blank" class="modal__item">
+                     <img class="modal__img" src="/assets/img/certificates/Веб дизайн в Figma с нуля до результата! Основы UX UI Web Design.jpg" alt="">
+                     <p class="modal__p" data-en="Fundamentals of UX UI Web Design" data-ru="Основы UX UI Веб-дизайна"></p>
+                  </a>
+
+                  <a href="/assets/certificates/Wordpress, Верстка сайта и перенос на CMS.pdf" target="_blank" class="modal__item">
+                     <img class="modal__img" src="/assets/img/certificates/Wordpress, Верстка сайта и перенос на CMS.jpg" alt="">
+                     <p class="modal__p" data-en="Wordpress, Website layout and transfer to CMS" data-ru="Wordpress, Верстка сайта и перенос на CMS"></p>
+                  </a>
+
+                  <a href="/assets/certificates/Тренажер по вёрстке, плагин Emmet.pdf" target="_blank" class="modal__item">
+                     <img class="modal__img" src="/assets/img/certificates/Тренажер по вёрстке, плагин Emmet.jpg" alt="">
+                     <p class="modal__p" data-en="Layout simulator, plugin Emmet" data-ru="Тренажер по вёрстке, плагин Emmet"></p>
+                  </a>
+
+                  <a href="/assets/certificates/Язык программирования PHP.pdf" target="_blank" class="modal__item">
+                     <img class="modal__img" src="/assets/img/certificates/Язык программирования PHP.jpg" alt="">
+                     <p class="modal__p" data-en="PHP programming language" data-ru="Язык программирования PHP"></p>
+                  </a>
+
+               </div>
+
+            </div>
+
+         </section>
+
+         <!--==================== SKILLS ====================-->
+         <section class="skills section">
+            <div class="skills__container container grid">
+               <div class="skills__data">
+                  <h3 class="section__subtitle data__color" data-en="Favorite Skills" data-ru="Технологии"></h3>
+
+                  <h2 class="section__title" data-en="My Skills" data-ru="Мои навыки"></h2>
+
+                  <p class="skills__description" data-en="See fully what skills I have and perform, to develop the projects for you." data-ru="В своей работе использую следующие навыки и технологии.">
+                  </p>
+
+                  <a href="#projects" class="button" data-en="See Projects" data-ru="Проекты"></a>
+               </div>
+
+               <div class="skills__content">
+                  <ol class="skills__group">
+                     <li class="skills__item">HTML & CSS</li>
+                     <li class="skills__item">JavaScript</li>
+                     <li class="skills__item">Bootstrap</li>
+                     <li class="skills__item">React</li>
+                  </ol>
+
+                  <ol class="skills__group" start="5">
+                     <li class="skills__item">Git & GitHub</li>
+                     <li class="skills__item">Figma</li>
+                     <li class="skills__item">Adobe</li>
+                  </ol>
+               </div>
+            </div>
+         </section>
+
+         <!--==================== SERVICES ====================-->
+         <section class="services section" id="services">
+            <h3 class="section__subtitle data__color" data-en="My Services" data-ru="Мои услуги"></h3>
+
+            <h2 class="section__title" data-en="What I Do" data-ru="Чем я занимаюсь"></h2>
+
+            <div class="services__container container grid">
+               <article class="services__card">
+                  <i class="ri-layout-3-line services__icon"></i>
+
+                  <h2 class="services__title" data-en="Web Developer" data-ru="Веб-разработчик"></h2>
+
+                  <p class="services__description" data-en="Development of custom web pages. Using current technologies and libraries of the labor field." data-ru="Разработываю веб-страницы, используя актуальные технологии и библиотеки."></p>
+               </article>
+
+               <article class="services__card">
+                  <i class="ri-pantone-line services__icon"></i>
+
+                  <h2 class="services__title" data-en="UI/UX Designer" data-ru="UI/UX Дизайнер"></h2>
+
+                  <p class="services__description" data-en="I offer design of web interfaces and mobile applications, design made in Figma and Adobe." data-ru="Создаю дизайн веб-интерфейсов и мобильных приложений в Figma и Adobe."></p>
+               </article>
+
+               <article class="services__card">
+                  <i class="ri-lightbulb-flash-line services__icon"></i>
+
+                  <h2 class="services__title" data-en="Internet Marketing" data-ru="Интернет-Маркетолог"></h2>
+
+                  <p class="services__description" data-en="I know how to enhance brand visibility, attract a larger target audience, and improve conversion." data-ru="Знаю как увеличить видимость бренда, привлечь больше целевой аудитории и улучшить конверсию."></p>
+               </article>
+            </div>
+         </section>
+
+         <!--==================== PROJECTS ====================-->
+         <section class="projects section" id="projects">
+            <h3 class="section__subtitle data__color" data-en="My Jobs" data-ru="Мои работы"></h3>
+
+            <h2 class="section__title" data-en="Recent Projects" data-ru="Недавние проекты"></h2>
+
+            <div class="projects__container container grid">
+               <article class="projects__card">
+                  <img src="/assets/img/projects/project-img-1.jpg" alt="projects image" class="projects__img">
+
+                  <div class="projects__modal">
+                     <span class="projects__subtitle">Web</span>
+
+                     <h2 class="projects__title">Donecode</h2>
+
+                     <a href="https://donecode.ru/" target="_blank" class="projects__button">
+                        View <i class="ri-external-link-line"></i>
+                     </a>
+                  </div>
+               </article>
+
+               <article class="projects__card">
+                  <img src="/assets/img/projects/project-img-3.jpg" alt="projects image" class="projects__img">
+
+                  <div class="projects__modal">
+                     <span class="projects__subtitle">Web</span>
+
+                     <h2 class="projects__title">Fairy Forest</h2>
+
+                     <a href="/assets/proj/Fairy_Forest/index.html" target="_blank" class="projects__button">
+                        View <i class="ri-external-link-line"></i>
+                     </a>
+                  </div>
+               </article>
+
+               <article class="projects__card">
+                  <img src="/assets/img/projects/project-img-2.jpg" alt="projects image" class="projects__img">
+
+                  <div class="projects__modal">
+                     <span class="projects__subtitle">Web</span>
+
+                     <h2 class="projects__title">Cars of Korea</h2>
+
+                     <a href="https://carsofkorea.ru/" target="_blank" class="projects__button">
+                        View <i class="ri-external-link-line"></i>
+                     </a>
+                  </div>
+               </article>
+
+               <article class="projects__card">
+                  <img src="/assets/img/projects/project-img-4.jpg" alt="projects image" class="projects__img">
+
+                  <div class="projects__modal">
+                     <span class="projects__subtitle">Web</span>
+
+                     <h2 class="projects__title">GoTrip</h2>
+
+                     <a href="/assets/proj/GoTrip html/index.html" target="_blank" class="projects__button">
+                        View <i class="ri-external-link-line"></i>
+                     </a>
+                  </div>
+               </article>
+
+               <article class="projects__card">
+                  <img src="/assets/img/projects/project-img-5.jpg" alt="projects image" class="projects__img">
+
+                  <div class="projects__modal">
+                     <span class="projects__subtitle">ReactJS</span>
+
+                     <h2 class="projects__title">Portfolio</h2>
+
+                     <a href="#" class="projects__button">
+                        View <i class="ri-external-link-line"></i>
+                     </a>
+                  </div>
+               </article>
+
+               <article class="projects__card">
+                  <img src="/assets/img/projects/project-img-6.jpg" alt="projects image" class="projects__img">
+
+                  <div class="projects__modal">
+                     <span class="projects__subtitle">VueApp</span>
+
+                     <h2 class="projects__title">Races Starcraft 2</h2>
+
+                     <a href="/assets/proj/vueApp/index.html" target="_blank" class="projects__button">
+                        View <i class="ri-external-link-line"></i>
+                     </a>
+                  </div>
+               </article>
+            </div>
+         </section>
+
+         <!--==================== CONTACT ====================-->
+         <section class="contact section" id="contact">
+            <h3 class="section__subtitle data__color" data-en="Get In Touch" data-ru="Связаться"></h3>
+
+            <h2 class="section__title" data-en="Contact Me" data-ru="Напишите мне"></h2>
+
+            <div class="contact__container container grid">
+               <form action="form.php" method="POST" class="contact__form" id="contact-form">
+                  <div class="contact__group">
+                     <input type="text" name="user_name" required placeholder="Enter your name" class="contact__input">
+                     <input type="email" name="user_email" required placeholder="Enter your email" class="contact__input">
+                  </div>
+
+                  <textarea name="user_project" required placeholder="Enter your message" class="contact__input"></textarea>
+
+                  <p class="contact__message" id="contact-message"></p>
+
+                  <button type="submit" class="button contact__button" data-en="Send Message" data-ru="Отправить">
+                     
+                  </button>
+               </form>
+            </div>
+         </section>
+      </main>
+
+      <!--==================== FOOTER ====================-->
+      <footer class="footer">
+         <div class="footer__container container grid">
+            <div>
+               <h1 class="footer__title">
+                  Alex <span>Trunov</span>
+               </h1>
+
+               <h2 class="footer__education">
+                  Front-end Developer
+               </h2>
+            </div>
+
+            <div class="footer__social">
+               <a href="https://www.facebook.com/profile.php?id=100005718077038" target="_blank" class="footer__social-link">
+                  <i class="ri-facebook-line"></i>
+               </a>
+
+               <a href="https://www.instagram.com/trunov_alexey/" target="_blank" class="footer__social-link">
+                  <i class="ri-instagram-line"></i>
+               </a>
+
+               <a href="https://t.me/trunov_alexey" target="_blank" class="footer__social-link">
+                  <i class="ri-telegram-line"></i>
+               </a>
+            </div>
+
+            <span class="footer__copy" data-en="&#169; Copyright Truenow. All rights reserved" data-ru="&#169; Truenow. Все права защищены">
+               
+            </span>
+         </div>
+      </footer>
+
+      <!--========== SCROLL UP ==========-->
+      <a href="#" class="scrollup" id="scroll-up">
+         <i class="ri-arrow-up-line"></i>
+      </a>
+
+      <!--=============== SCROLLREVEAL ===============-->
+      <script src="/assets/js/scrollreveal.min.js"></script>
+
+      <!--=============== EMAIL JS ===============-->
+      <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+      <!--=============== MAIN JS ===============-->
+      <script src="assets/js/main.js"></script>
+   </body>
+</html>
